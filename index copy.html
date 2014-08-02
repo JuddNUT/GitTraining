@@ -1,0 +1,75 @@
+<html>
+<head>
+	<script type="text/javascript">
+
+
+
+		function adder(){
+			var x,y,z;
+			x = parseInt(document.getElementById("num1").value);
+			y = parseInt(document.getElementById("num2").value);
+			z = x + y;
+			document.getElementById('add-result').innerHTML = z;
+
+		}
+
+
+	function subtract(){
+
+		var x,y;
+		x = document.getElementById('num1').value;
+		y = document.getElementById('num2').value;
+		document.getElementById('sub-result').innerHTML = x-y;
+
+
+	}
+
+
+	function Multiply(){
+ 		 
+ 		 var a,b;
+
+
+		a=document.getElementById("num1").value;
+		b=document.getElementById("num2").value;
+		document.getElementById('mult-result').innerHTML=a*b;
+
+	}
+
+
+	function divide(){
+			var a,b,z;
+			a = parseInt(document.getElementById("num1").value);
+			b = parseInt(document.getElementById("num2").value);
+			result = a / b;
+			document.getElementById('div-result').innerHTML = result;
+			document.getElementById('div-name').innerHTML = "YEHEY!!!"
+	}
+
+	</script>
+
+</head>
+<body>
+	<div>
+	<input type="text" id="num1">
+	<input type="text" id="num2">
+	</div>
+	<div>
+	<div><button id="add" onclick="adder();">Add</button></div>
+	<div id="add-result"></div>
+	</div>
+	<div>
+	<div><button onclick="subtract()" id="sub">Subtract</button></div>
+	<div id="sub-result"></div>
+	</div>
+	<div>
+	<div><button onclick ="Multiply()" id="Multiply">Multiply</button></div>
+	<div id="mult-result"></div>
+	</div>
+	<div>
+	<div><button onclick="divide()" id="div">Divide</button></div>
+	<div id="div-name"></div>
+	<div id="div-result"></div>
+	</div>
+</body>
+</html>
